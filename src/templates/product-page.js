@@ -132,7 +132,7 @@ const ProductPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
-    <Layout>
+    <Layout title="Productos">
       <ProductPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
@@ -145,7 +145,7 @@ const ProductPage = ({ data }) => {
         pricing={frontmatter.pricing}
       />
     </Layout>
-  )
+  );
 }
 
 ProductPage.propTypes = {

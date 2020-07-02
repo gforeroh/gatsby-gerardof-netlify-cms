@@ -35,14 +35,14 @@ const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
+    <Layout title="Nosotros">
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
       />
     </Layout>
-  )
+  );
 }
 
 AboutPage.propTypes = {

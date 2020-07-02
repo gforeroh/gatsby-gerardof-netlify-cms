@@ -35,6 +35,7 @@ export default class Index extends React.Component {
 
   render() {
     return (
+      /* eslint-disable */
       <Layout>
         <section className="section">
           <div className="container">

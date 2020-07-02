@@ -1,115 +1,243 @@
 import React from 'react'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 
-import logo from '../img/logo.svg'
-import facebook from '../img/social/facebook.svg'
-import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
-import vimeo from '../img/social/vimeo.svg'
+// import logo from '../img/logo.svg'
+// import facebook from '../img/social/facebook.svg'
+// import instagram from '../img/social/instagram.svg'
+// import twitter from '../img/social/twitter.svg'
+// import vimeo from '../img/social/vimeo.svg'
 
+/* eslint-disable */
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered">
-          <img
-            src={logo}
-            alt="Kaldi"
-            style={{ width: '14em', height: '10em' }}
-          />
-        </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
-            <div style={{ maxWidth: '100vw' }} className="columns">
-              <div className="column is-4">
-                <section className="menu">
-                  <ul className="menu-list">
+      <footer className="footer">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4">
+              {/* <!-- Footer Intro --> */}
+              <div className="footer_intro">
+                {/* <!-- Logo --> */}
+                <div className="logo footer_logo">
+                  <a href="/#" rel="noreferrer">
+                    Ran<span>go</span>
+                  </a>
+                </div>
+
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                  vitae enim enim. Sed nec dignissim purus.
+                </p>
+
+                {/* <!-- Social --> */}
+                <div className="footer_social">
+                  <ul>
                     <li>
-                      <Link to="/" className="navbar-item">
-                        Home
-                      </Link>
+                      <a href="/#" rel="noreferrer">
+                        <i className="fab fa-pinterest"></i>
+                      </a>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/about">
-                        About
-                      </Link>
+                      <a href="/#" rel="noreferrer">
+                        <i className="fab fa-facebook-f"></i>
+                      </a>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/products">
-                        Products
-                      </Link>
+                      <a href="/#" rel="noreferrer">
+                        <i className="fab fa-twitter"></i>
+                      </a>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
-                      </Link>
+                      <a href="/#" rel="noreferrer">
+                        <i className="fab fa-dribbble"></i>
+                      </a>
                     </li>
                     <li>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Admin
+                      <a href="/#" rel="noreferrer">
+                        <i className="fab fa-behance"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/#" rel="noreferrer">
+                        <i className="fab fa-linkedin-in"></i>
                       </a>
                     </li>
                   </ul>
-                </section>
+                </div>
+
+                {/* <!-- Copyright --> */}
+                <div className="footer_cr">
+                  {/* <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> */}
+                  Copyright &copy;
+                  <script>document.write(new Date().getFullYear());</script> All
+                  rights reserved | This template is made with
+                  <i className="fa fa-heart" aria-hidden="true"></i> by{" "}
+                  <a href="https://colorlib.com" target="_blank">
+                    Colorlib
+                  </a>
+                  {/* <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> */}
+                </div>
               </div>
-              <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                    <li>
-                      <Link className="navbar-item" to="/blog">
-                        Latest Stories
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
+            </div>
+
+            {/* <!-- Footer Services --> */}
+            <div className="col-lg-2">
+              <div className="footer_col">
+                <div className="footer_col_title">Services</div>
+                <ul>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      Social media
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      Management
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      Branding
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="twitter" href="https://twitter.com">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="instagram" href="https://instagram.com">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="vimeo" href="https://vimeo.com">
-                  <img
-                    src={vimeo}
-                    alt="Vimeo"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
+
+              <div className="footer_col">
+                <div className="footer_col_title">Aditionals</div>
+                <ul>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      Social media
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      Management
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      Branding
+                    </a>
+                  </li>
+                </ul>
               </div>
+            </div>
+
+            {/* <!-- Footer Menu --> */}
+            <div className="col-lg-2">
+              <div className="footer_col">
+                <div className="footer_col_title">Menu</div>
+                <ul>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      About us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      Services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      Portfolio
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      Contact
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      Testimonials
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* <!-- Footer About --> */}
+            <div className="col-lg-2">
+              <div className="footer_col">
+                <div className="footer_col_title">About us</div>
+                <ul>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      The team
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      History
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      Company
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      Support
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* <!-- Footer Community --> */}
+            <div className="col-lg-2">
+              <div className="footer_col">
+                <div className="footer_col_title">Community</div>
+                <ul>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      Forums
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      Q&A
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/#" rel="noreferrer">
+                      Purposes
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col">
+              {/* <!-- Copyright --> */}
+              <div className="footer_cr_2">2017 All rights reserved</div>
             </div>
           </div>
         </div>
       </footer>
-    )
+    );
   }
-}
+};
 
 export default Footer
